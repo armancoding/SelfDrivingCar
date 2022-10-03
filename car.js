@@ -12,14 +12,14 @@ class Car{
         this.friction       =    0.1;
         this.angle          =      0;
 
-        this.sensor     =    new Sensor(this);
+        this.sensor     =  new Sensor(this);
         this.controls   =  new Controls();
     }
 
-    update()
+    update(roadBorders)
     {
         this.#move();
-        this.sensor.update();
+        this.sensor.update(roadBorders);
     }
 
     #move()
