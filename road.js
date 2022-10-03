@@ -5,8 +5,8 @@ class Road{
         this.width=width;
         this.laneCount=laneCount;
 
-        this.left=x-width/2 + 20;
-        this.right=x+width/2 - 20;
+        this.left=x-width/2 + 2;
+        this.right=x+width/2 - 2;
 
         const infinity = 1000000;
         this.top=-infinity;
